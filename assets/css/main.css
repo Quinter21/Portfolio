@@ -77,7 +77,7 @@ div.video {
 
 #myVideo {
 	min-width: 100%;
-	min-height: 100%;
+	min-height: 110%;
 	object-fit: cover;
 }
 
