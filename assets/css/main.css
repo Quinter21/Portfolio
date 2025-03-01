@@ -2,30 +2,57 @@ header {
 	background: rgba(0,0,0,0.7);
 	width: 100%;
 	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: 100;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	margin: 0;
 }
 
-nav {
-	float: right;
+.logo {
+    padding: 1rem;
+	font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav.navigation {
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
   
 nav ul {
+	display: flex;
 	list-style: none;
-	overflow: hidden; 
-}
-
-nav ul li {
-	float: left;
-	font-family: Arial, Helvetica, sans-serif;;
+	overflow: hidden;
+	gap: 1.5rem;
+	padding: 0;
+	margin: 0;
 	font-size: 20px;
 }
 
-
 nav ul li a {
-	display: block; 
-	padding: 20px;
-	color: #000000;
+	display: block;
+	color: white;
 	text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+	margin: 0.5rem;	
+}
+
+.btn {
+	background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /*Al pasar el raton cambia el color*/
