@@ -65,7 +65,7 @@ header {
 		background: #eca023;
 	}
 
-div.video {
+#video {
 	position: relative;
 	min-width: 99.7%;
 	max-height: 100%;
@@ -75,10 +75,28 @@ div.video {
 	align-items: center;
 }
 
+#video p {
+	position: absolute;
+	justify-content: center;
+	font-size: 5rem;
+	background-color: rgba(100,100,100,0.5);
+
+}
+
 #myVideo {
 	min-width: 100%;
-	min-height: 110%;
+	min-height: 100%;
 	object-fit: cover;
+}
+
+#intro {
+	display: flex;
+	margin: 15px;
+}
+#intro img {
+	margin-left: 12%;
+	max-height: 25rem;
+	border-radius: 50%;
 }
 
 
