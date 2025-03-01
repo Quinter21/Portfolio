@@ -1,73 +1,125 @@
-/* Icons */
-
-ul.icons {
-	cursor: default;
-	list-style: none;
-	padding-left: 0;
+* {
+	margin: 0;
+	padding: 0;
+}
+/*HEADER*/
+header {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	margin: 0;
 }
 
-	ul.icons li {
-		display: inline-block;
-		padding: 0 0.5rem 0 0;
-		vertical-align: middle;
+	.logo {
+		padding: 1rem;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: white;
 	}
 
-		ul.icons li:last-child {
-			padding-right: 0;
-		}
-
-		ul.icons li .icon:before {
-			width: 2.25rem;
-			height: 2.25rem;
-			line-height: 2.25rem;
-			display: inline-block;
-			text-align: center;
-			border-radius: 100%;
-			font-size: 2.25rem;
-		}
-
-	ul.icons.alt li .icon:before {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		font-size: 1rem;
+	nav.navigation {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	nav ul {
+		display: flex;
+		list-style: none;
+		overflow: hidden;
+		gap: 1.5rem;
+		padding: 0;
+		margin: 0;
+		font-size: 20px;
 	}
 
+	nav ul li a {
+		display: block;
+		color: white;
+		text-decoration: none;
+	}
 
-/* Icon */
+	.buttons {
+		display: flex;
+		gap: 1rem;
+		margin: 0.5rem;	
+	}
 
-.icon {
-	text-decoration: none;
-	border-bottom: none;
+	.btn {
+		background-color: #007bff;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	/*Al pasar el raton cambia el color*/
+	nav ul li:hover {
+		background: #eca023;
+	}
+
+div.video {
 	position: relative;
+	min-width: 99.7%;
+	max-height: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-	.icon:before {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		font-style: normal;
-		font-variant: normal;
-		text-rendering: auto;
-		line-height: 1;
-		text-transform: none !important;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 400;
-	}
+#myVideo {
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
 
+
+/* Icons */
+ul.icons {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	z-index: 100;
+}
+	ul.icons li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem;
+		height: 3rem;
+		background-color: aquamarine;
+		border-radius: 50%;
+		transition: background-color 1 ease-in-out;
+	}
+	ul.icons li .icon {
+		font-size: 2rem; /* Tamaño del icono */
+		text-align: center;
+		color: black; /* Color del icono */
+	}
+	ul.icons li:hover {
+		background-color: #ff6600;
+	}
+/* Icon */
+.icon {
+	color: black;
+}
 	.icon > .label {
 		display: none;
 	}
-
-	.icon:before {
-		line-height: inherit;
-	}
-
-	.icon.solid:before {
-		font-weight: 900;
-	}
-
 	.icon.fa-brands:before {
 		font-family: 'Font Awesome 5 Brands';
 	}
