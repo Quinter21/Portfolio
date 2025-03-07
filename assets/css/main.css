@@ -39,29 +39,40 @@
 		border-radius: 50%;
 	}
 	#introText {
+		max-width: 50%;
 		margin-left: 5rem;
-		margin-right: 15rem;
+		margin-right: 3rem;
 		margin-top: 3rem;
 	}
 
 /*SKILLS*/
-div.skills{
+div.skills {
 	display: flex;
-	justify-content: center;
-    align-items: center; 
     overflow: hidden;
 }
-	div.skills img{
+	div.skills img {
 		max-width: 45%;
 		height: auto;
 		display: block;
 	}
-	div.skills ul{
+	div.skillType {
+		margin-top: 1rem;
 		margin-left: 3rem;
-		min-width: 55%;
-		list-style-type: '- ';
+		width: 55%;
 	}
-
+	div.skillBlock {
+		display: flex;
+		gap: 2rem;
+		width: auto;
+		height: 100%;
+	}
+	div.skills ul{
+		list-style-type: '- ';
+		height: 100%;
+	}
+	div.skills li{
+		margin:0 1rem 1rem 1rem;
+	}
 /*RESUMEN*/
 #videoResumen {
 	display: flex;
