@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -18,14 +19,16 @@
         
         <nav class="navigation">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#">Etc</a></li>
             </ul>
         </nav>
 
         <div class="buttons">
-            <button class="curriculum btn">CV</button>
+            <a href="assets/CV_English.pdf" download>
+                <button class="curriculum btn">CV</button>
+            </a>
             <button class="language btn">Language</button>
         </div>
     </header>
@@ -41,14 +44,80 @@
     </nav>
 
     <!--video resumen-->  
-    <div class="video">
+    <div id="videoIntro">
         <video autoplay muted loop id="myVideo">
         <source src="assets/videos/Polito en el laberinto.mp4" type="video/mp4">
         </video>
+        
+        <h1>Ángel Quintero Montes</h1>
+        
     </div>
 
-    <p>
-        Angel que soy.
-    </p>
+    <div id="intro">
+        <img src="assets/images/fotoProv.jpg" alt="Avatar">
+        <p id="introText">Holi holi, esto es una prueba de si funciona o no, tengo que escribir bastante para saber como funcionan aquí las cosas como los párramos, tildes, saltos de linea y cosas varias. Bueno creo que esto ha sido más que suficiente por ahora.</p>
+    </div>
+
+    <div class="skills">
+        <img src="assets/images/pr1.png" alt="Project Img">
+        <div class="skillType">
+            <h1>HABILIDADES TÉCNICAS</h1>
+            <div class="skillBlock">
+                <div>
+                    <h2>Software y lenguajes</h2>
+                    <ul>
+                        <li>C++, C y C#</li>
+                        <li>Python, Java y Javascript</li>
+                        <li>Visual Studio, Eclipse, VS Code</li>
+                        <li>Microsoft Office, Google Docs y Libre Office</li>
+                        <li>Excel y Hojas de cálculo</li>
+                        <li>MySQL y PL/SQL</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Motores de videojuegos</h2>
+                    <ul>
+                        <li>Unreal Engine 5</li>
+                        <li>Godot</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skillType">
+            <h1>HABILIDADES DE DISEÑO</h1>
+            <div class="skillBlock">
+                <div>
+                    <h2>Software y lenguajes</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/pr2.png" alt="Project Img">
+    </div>
+
+    <div id="videoResumen">
+        <p>Porfi mira el video, es un resumen de los mejores proyectos que he hecho hasta la fecha.aaaaa aaaaaa aaaaaaaaaaaa aaaa aa a
+            aa aa aaaa aaaaaa aaaaa aaaaa asfn opasnf qoanw nodian oinwo dnaion wodhjaoiwdj apj piajw dpa j pwj dpaj </p>
+        <video controls>
+            <source src="assets/videos/Polito en el laberinto.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="portfolio">
+        <img src="assets/images/fotoProv.jpg" alt="collage">
+        <button>Portfolio</button>
+    </div>
 </body>
 </html>
