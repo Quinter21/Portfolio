@@ -97,12 +97,16 @@ div.skills {
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
+	margin: 2rem;
 }
-	#portfolio img {
+	/*#portfolio img {
 		min-width: 100%;
-	}
-	#portfolio button {
+		height: auto;
+	}*/
+	#portfolio a {
 		position: absolute;
+	}
+	#portfolio a button{
 		font-size: 5rem;
 		background-color: rgba(100,100,100,0.5);
 		z-index: 10;
