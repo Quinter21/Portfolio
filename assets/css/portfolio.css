@@ -30,5 +30,10 @@ h1 {
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	}
 	.container {
-		padding: 2px 16px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
 	}
+    .container h4,p {
+        margin: 0.5rem 2rem;
+    }

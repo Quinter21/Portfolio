@@ -1,0 +1,57 @@
+#titulo {
+    margin: 6rem 4rem 2rem;
+}
+#presentacion {
+    display: flex;
+    min-width: 100vb;
+    background-color: aquamarine;
+}
+    #carrusel {
+        width: 65%;
+        background-color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        padding-left: 6rem;
+    }
+    #carrusel img {
+        width: 100%;
+        height: auto;
+    }
+
+    #resumen {
+        width: 25%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        padding-left: 4rem;
+        padding-right: 6rem;
+    }   
+    #resumen img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    #resumen button{
+        margin: 2rem;
+        padding: 1rem 0;
+        width: 80%;
+        font-size: 25px;
+    }
+
+#datos {
+    display: flex;
+    background-color: azure;
+}
+    #infoBox {
+        margin: 2rem;
+        width: 15%;
+        background-color: blanchedalmond;
+    }
+    #infoDescripcion {
+        min-width: 60%;
+        margin: 2rem 5rem;
+        background-color: beige;
+    }

@@ -49,11 +49,13 @@
 div.skills {
 	display: flex;
     overflow: hidden;
+	background-color: aquamarine;
 }
 	div.skills img {
 		max-width: 45%;
 		height: auto;
 		display: block;
+		margin: 0 1rem;
 	}
 	div.skillType {
 		margin-top: 1rem;
