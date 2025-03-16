@@ -95,11 +95,12 @@ div.skills {
 /*PORTFOLIO*/
 #portfolio {
 	display: flex;
-	max-height: 25rem;
+	height: 25rem;
+	background-color: aquamarine;
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem;
+	margin-top: 2rem;
 }
 	/*#portfolio img {
 		min-width: 100%;
@@ -110,6 +111,12 @@ div.skills {
 	}
 	#portfolio a button{
 		font-size: 5rem;
-		background-color: rgba(100,100,100,0.5);
 		z-index: 10;
+		color: black;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 15px;
+		cursor: pointer;
 	}
+
+	
