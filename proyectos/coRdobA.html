@@ -47,8 +47,29 @@
     <h1 id="titulo">coRdobA</h1>
     <div id="presentacion">
         <div id="carrusel">
-            <img src="../assets/images/pr1.png">
+            <div class="slide">
+                <img src="../assets/images/ExitTheDungeon.png" style="width: 100%;">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/ExitTheDungeon.png" style="width: 100%;" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;" onclick="currentSlide(2)">
+                </div>
+            </div>
         </div>
+
+        
+
         <div id="resumen">
             <img src="../assets/images/pr2.png">
             <p>Proyecto de fin de grado. Creado con Android Studio me propuse crear este proyecto para
@@ -68,19 +89,51 @@
             <p>1 persona</p>
             <h3>Motor/IDE:</h3>
             <p>Android Studio</p>
-            <h3>AAA</h3>
-            <p>BBB</p>
-            <h3>AAA</h3>
-            <p>BBB</p>
         </div>
         <div id="infoDescripcion">
-            <h1>aaa</h1>
+            <h1>Acerca de la aplicación</h1>
             <p>aaaaasljednf oe finoiw nefowi no einfoieasn fpie npaf inpiasndf pine pifn apennf piaewjf piaenfpi aenp ifnapein fpinds ipfnepaifn padskfnm apeifnj ipand ipf</p>
-            <h1>aaa</h1>
+            <h1>ARCore</h1>
             <p>aaaaasljednf oe finoiw nefowi no einfoieasn fpie npaf inpiasndf pine pifn apennf piaewjf piaenfpi aenp ifnapein fpinds ipfnepaifn padskfnm apeifnj ipand ipf</p>
+            <h1>Api de Google Maps</h1>
+            <p></p>
+            <h1>Firebase</h1>
+            <p></p>
         </div>
 
     </div>
 
 </body>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </html>
