@@ -19,7 +19,8 @@
 		font-size: 5rem;
 		padding: 1rem;
 		color: aquamarine;
-		background-color: rgba(10,10,10,0.6);
+		background-color: rgba(10,10,10,0.5);
+		backdrop-filter: blur(2px);
 	}
 	#myVideo {
 		min-width: 100%;
@@ -50,17 +51,17 @@ div.skills {
 	display: flex;
     overflow: hidden;
 	background-color: aquamarine;
+	min-height: 25rem;
 }
 	div.skills img {
-		max-width: 45%;
+		max-width: 60%;
 		height: auto;
 		display: block;
-		margin: 0 1rem;
 	}
 	div.skillType {
 		margin-top: 1rem;
 		margin-left: 3rem;
-		width: 55%;
+		min-width: auto;
 	}
 	div.skillBlock {
 		display: flex;

@@ -1,5 +1,5 @@
 #titulo {
-    margin: 6rem 4rem 2rem;
+    margin: 6rem 6rem 2rem;
 }
 #presentacion {
     display: flex;
@@ -7,7 +7,8 @@
     background-color: aquamarine;
 }
     #carrusel {
-        width: 65%;
+        max-width: 65%;
+        min-width: 10vb;
         background-color: aliceblue;
         justify-content: center;
         align-items: center;
@@ -20,19 +21,22 @@
     }
 
     #resumen {
-        width: 25%;
+        max-width: 25%;
+        min-width: 10vb;
         background-color: antiquewhite;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2rem;
         padding-left: 4rem;
-        padding-right: 6rem;
     }   
     #resumen img{
         width: 100%;
         height: auto;
         margin-bottom: 4rem;
+    }
+    #resumen p {
+        max-width: 100%;
     }
     #resumen button{
         margin: 2rem;
@@ -46,12 +50,17 @@
     background-color: azure;
 }
     #infoBox {
-        margin: 2rem;
+        margin: 2rem 2rem 2rem 6rem;
         width: 15%;
         background-color: blanchedalmond;
     }
     #infoDescripcion {
         min-width: 60%;
-        margin: 2rem 5rem;
+        margin: 2rem 4rem;
         background-color: beige;
+    }
+
+    #infoBox p {
+        margin: 0.5rem 2rem;
+        
     }
