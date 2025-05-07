@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>coRdobA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/proyectos.css"
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!--<a href="index.html" class="logo">Angel</a>-->
+        <div class="logo">Ángel Quintero Montes</div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="#">Etc</a></li>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <a href="../assets/CV_English.pdf" download>
+                <button class="curriculum btn">CV</button>
+            </a>
+            <button class="language btn">Language</button>
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav_icons">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-solid fa-envelope"><span class="label">Correo</span></a> </li>
+            <li><a href="https://www.linkedin.com/in/angel-quintero-089538238" class="icon fa-brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://github.com/Quinter21" class="icon fa-brands fa-github"><span class="label">Github</span></a></li>
+            <li><a href="#" class="icon fa-brands fa-itch-io"><span class="label">Itch.io</span></a> </li>
+        </ul>
+    </nav>
+
+    <h1 id="titulo">Exit the Dungeon</h1>
+    <div id="presentacion">
+        <div id="carrusel">
+            <div class="slide">
+                <img src="../assets/images/ExitTheDungeon.png" style="width: 100%;">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/ExitTheDungeon.png" style="width: 100%;" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;" onclick="currentSlide(2)">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="resumen">
+            <img src="../assets/images/pr2.png">
+            <p>bablabasbnsdovpivneoirfnowièfnsoupdgberofhqpasjfs piìsngefopusn owpienf ouipwbnourn pivnw oernfo nf nesoi fnoan efoen eon ofn so ne nps finisnefoisen fioenf osne ionf iosne nisfolsn</p>
+            <button>PATATA</button>
+        </div>
+    </div>
+
+    <div id="datos">
+        <div id="infoBox">
+            <h3>Plataforma:</h3>
+            <p>Android</p>
+            <h3>Periodo de Tiempo:</h3>
+            <p>4 meses</p>
+            <h3>Tamaño de equipo</h3>
+            <p>1 persona</p>
+            <h3>Motor/IDE:</h3>
+            <p>Android Studio</p>
+        </div>
+        <div id="infoDescripcion">
+            <h1>Acerca de la aplicación</h1>
+            <p>aaaaasljednf oe finoiw nefowi no einfoieasn fpie npaf inpiasndf pine pifn apennf piaewjf piaenfpi aenp ifnapein fpinds ipfnepaifn padskfnm apeifnj ipand ipf</p>
+            <h1>ARCore</h1>
+            <p>aaaaasljednf oe finoiw nefowi no einfoieasn fpie npaf inpiasndf pine pifn apennf piaewjf piaenfpi aenp ifnapein fpinds ipfnepaifn padskfnm apeifnj ipand ipf</p>
+            <h1>Api de Google Maps</h1>
+            <p></p>
+            <h1>Firebase</h1>
+            <p></p>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+</html>

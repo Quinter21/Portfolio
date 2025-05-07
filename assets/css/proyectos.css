@@ -1,0 +1,110 @@
+#titulo {
+    margin: 6rem 6rem 2rem;
+}
+#presentacion {
+    display: flex;
+    min-width: 100vb;
+    background-color: aquamarine;
+}
+    #carrusel {
+        position: relative;
+        max-width: 65%;
+        min-width: 10vb;
+        background-color: aliceblue;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        padding-left: 6rem;
+    }
+        .slide {
+            display: none;
+        }
+        .cursor {
+            cursor: pointer;
+        }
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            right: 32px;
+            border-radius: 3px 0 0 3px;
+        }        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* Six columns side by side */
+            .column {
+                float: left;
+                width: 20%;
+            }
+            /* Add a transparency effect for thumnbail images */
+            .demo {
+                opacity: 0.6;
+            }
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+    #resumen {
+        max-width: 25%;
+        min-width: 10vb;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        padding-left: 4rem;
+        padding-right: 6rem;
+    }   
+    #resumen img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    #resumen button{
+        margin: 2rem;
+        padding: 1rem 0;
+        width: 80%;
+        font-size: 25px;
+    }
+
+#datos {
+    display: flex;
+    background-color: azure;
+}
+    #infoBox {
+        margin: 2rem 2rem 2rem 6rem;
+        width: 15%;
+        background-color: blanchedalmond;
+    }
+    #infoDescripcion {
+        min-width: 60%;
+        margin: 2rem 4rem;
+        background-color: beige;
+    }
+
+    #infoBox p {
+        margin: 0.5rem 2rem;
+        
+    }
+

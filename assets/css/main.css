@@ -18,8 +18,9 @@
 
 		font-size: 5rem;
 		padding: 1rem;
-		color: aquamarine;
-		background-color: rgba(10,10,10,0.6);
+		color: var(--color-boton);
+		background-color: rgba(10,10,10,0.5);
+		backdrop-filter: blur(2px);
 	}
 	#myVideo {
 		min-width: 100%;
@@ -29,9 +30,10 @@
 /*INTRO*/
 #intro {
 	display: flex;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	margin-left: 15px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 15px;
+	background-color: var(--color-fondo);
 }
 	#intro img {
 		margin-left: 12%;
@@ -49,16 +51,18 @@
 div.skills {
 	display: flex;
     overflow: hidden;
+	background-color: var(--color-fondo);
+	min-height: 25rem;
 }
 	div.skills img {
-		max-width: 45%;
+		max-width: 60%;
 		height: auto;
 		display: block;
 	}
 	div.skillType {
 		margin-top: 1rem;
 		margin-left: 3rem;
-		width: 55%;
+		min-width: auto;
 	}
 	div.skillBlock {
 		display: flex;
@@ -79,10 +83,11 @@ div.skills {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 10rem;
-	margin-right: 10rem;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: var(--color-fondo);
 }
 	#videoResumen video{
 		margin-top: 2rem;
@@ -93,17 +98,28 @@ div.skills {
 /*PORTFOLIO*/
 #portfolio {
 	display: flex;
-	max-height: 25rem;
+	height: 25rem;
+	background-color: aquamarine;
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 }
-	#portfolio img {
+	/*#portfolio img {
 		min-width: 100%;
-	}
-	#portfolio button {
+		height: auto;
+	}*/
+	#portfolio a {
 		position: absolute;
-		font-size: 5rem;
-		background-color: rgba(100,100,100,0.5);
-		z-index: 10;
 	}
+	#portfolio a button{
+		font-size: 5rem;
+		z-index: 10;
+		color: black;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 15px;
+		cursor: pointer;
+		background-color: var(--color-boton);
+	}
+
+	
