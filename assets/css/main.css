@@ -18,7 +18,7 @@
 
 		font-size: 5rem;
 		padding: 1rem;
-		color: aquamarine;
+		color: var(--color-boton);
 		background-color: rgba(10,10,10,0.5);
 		backdrop-filter: blur(2px);
 	}
@@ -30,9 +30,10 @@
 /*INTRO*/
 #intro {
 	display: flex;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	margin-left: 15px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 15px;
+	background-color: var(--color-fondo);
 }
 	#intro img {
 		margin-left: 12%;
@@ -50,7 +51,7 @@
 div.skills {
 	display: flex;
     overflow: hidden;
-	background-color: aquamarine;
+	background-color: var(--color-fondo);
 	min-height: 25rem;
 }
 	div.skills img {
@@ -82,10 +83,11 @@ div.skills {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 10rem;
-	margin-right: 10rem;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: var(--color-fondo);
 }
 	#videoResumen video{
 		margin-top: 2rem;
@@ -101,7 +103,6 @@ div.skills {
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2rem;
 }
 	/*#portfolio img {
 		min-width: 100%;
@@ -118,6 +119,7 @@ div.skills {
 		padding: 0.5rem 1rem;
 		border-radius: 15px;
 		cursor: pointer;
+		background-color: var(--color-boton);
 	}
 
 	

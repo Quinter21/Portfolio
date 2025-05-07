@@ -5,7 +5,7 @@
 
 /*HEADER*/
 header {
-	background: black;
+	background: var(--verde-fondo);
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -50,8 +50,8 @@ header {
 		margin: 0.5rem;	
 	}
 	.btn {
-		background-color: #007bff;
-		color: white;
+		background-color: var(--color-boton);
+		color: var(--color-texto);
 		border: none;
 		padding: 0.5rem 1rem;
 		border-radius: 5px;
@@ -59,7 +59,7 @@ header {
 	}
 	/*Al pasar el raton cambia el color*/
 	nav ul li:hover {
-		background: #eca023;
+		background: var(--color-resalte);
 	}
 
 
@@ -83,22 +83,22 @@ ul.icons {
 		justify-content: center;
 		width: 3rem;
 		height: 3rem;
-		background-color: aquamarine;
+		background-color: var(--color-boton);
 		border-radius: 50%;
 		transition: background-color 1 ease-in-out;
 	}
 	ul.icons li .icon {
 		font-size: 2rem; /* Tamaño del icono */
 		text-align: center;
-		color: black; /* Color del icono */
+		color: var(--color-texto); /* Color del icono */
 	}
 	ul.icons li:hover {
-		background-color: #ff6600;
+		background-color: var(--color-resalte);
 	}
 
 	/* Icon */
 	.icon {
-		color: black;
+		color: var(--color-texto);
 	}
 		.icon > .label {
 			display: none;
