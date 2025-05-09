@@ -21,3 +21,14 @@ h2, .subtitulo {
   font-weight: 400;
   font-style: normal;
 }
+
+p, button, .texto {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button {
+  font-weight: 800;
+}
