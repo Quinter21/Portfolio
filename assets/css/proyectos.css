@@ -94,24 +94,28 @@
     background-color: azure;
 }
     #infoBox {
-        margin: 2rem 2rem 2rem 6rem;
-        width: 15%;
+        margin: 2rem 1rem 2rem 6rem;
+        width: 40vw;
         background-color: blanchedalmond;
     }
         #infoBox h2 {
             font-size: 1.25rem;
         }
-    #infoDescripcion {
-        min-width: 60%;
-        margin: 2rem 4rem;
+        #infoBox p {
+        margin: 0.5rem 2rem;
+        }
+    #infoDescription {
+        min-width: 55%;
+        margin: 2rem 6rem 2rem 4rem;
         background-color: beige;
     }
-        #infoDescripcion h1 {
+        #infoDescription h1 {
             font-size: 2.5rem;
         }
+        #infoDescription p{
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
 
-    #infoBox p {
-        margin: 0.5rem 2rem;
-        
-    }
+    
 
