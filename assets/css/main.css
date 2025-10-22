@@ -17,7 +17,7 @@
 		height: 100%;
 
 		padding: 1rem;
-		color: var(--color-boton);
+		color: var(--blanco);
 		background-color: rgba(10,10,10,0.5);
 		backdrop-filter: blur(2px);
 	}
@@ -32,7 +32,7 @@
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	padding-left: 15px;
-	background-color: var(--color-fondo);
+	background-color: var(--blanco);
 }
 	#intro img {
 		margin-left: 12%;
@@ -50,7 +50,7 @@
 div.skills {
 	display: flex;
     overflow: hidden;
-	background-color: var(--color-fondo);
+	background-color: var(--negro);
 	min-height: 25rem;
 }
 	div.skills img {
@@ -62,6 +62,7 @@ div.skills {
 		margin-top: 1rem;
 		margin-left: 3rem;
 		min-width: auto;
+		color: var(--blanco);
 	}
 	div.skillBlock {
 		display: flex;
@@ -86,7 +87,7 @@ div.skills {
 	padding-right: 10rem;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background-color: var(--color-fondo);
+	background-color: var(--blanco);
 }
 	#videoResumen video{
 		margin-top: 2rem;
@@ -98,7 +99,7 @@ div.skills {
 #portfolio {
 	display: flex;
 	height: 25rem;
-	background-color: aquamarine;
+	background-color: var(--negro);
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
@@ -118,6 +119,6 @@ div.skills {
 		padding: 0.5rem 1rem;
 		border-radius: 15px;
 		cursor: pointer;
-		background-color: var(--color-boton);
+		background-color: var(--primario);
 	}
 

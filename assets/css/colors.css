@@ -1,10 +1,9 @@
 :root {
-    --color-fondo: #00000004;
-    --color-resalte: #fe9920;
-    --verde-jade: #5da668;
-    --color-texto: #333333;
-    --verde-fondo: #003627;
-    --color-boton: #b8dbd9;
+    --primario: #c2da4d;
+    --secundario: #B4C258;
+    --terciario: #D3E07C;
+    --blanco: #F0EBDF;
+    --negro: #1e1b18;
   }
 
 h1, .titulo {
