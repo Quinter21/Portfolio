@@ -50,8 +50,10 @@
 div.skills {
 	display: flex;
     overflow: hidden;
-	background-color: var(--negro);
+	background: #292929;
+	background: linear-gradient(180deg, rgba(41, 41, 41, 1) 0%, #1e1b18 100%);
 	min-height: 25rem;
+	min-width: 100%;
 }
 	div.skills img {
 		max-width: 60%;
@@ -61,22 +63,24 @@ div.skills {
 	div.skillType {
 		margin-top: 1rem;
 		margin-left: 3rem;
+		margin-right: 3rem;
 		min-width: auto;
 		color: var(--blanco);
 	}
 	div.skillBlock {
 		display: flex;
-		gap: 2rem;
+		gap: 3rem;
 		width: auto;
 		height: 100%;
 	}
 	div.skills ul{
-		list-style-type: '- ';
+		list-style-type: '• ';
 		height: 100%;
 	}
 	div.skills li{
-		margin:0 1rem 1rem 1rem;
+		margin:1rem;
 	}
+	
 /*RESUMEN*/
 #videoResumen {
 	display: flex;
@@ -93,32 +97,5 @@ div.skills {
 		margin-top: 2rem;
 		max-width: 70%;
 		object-fit: cover;
-	}
-
-/*PORTFOLIO*/
-#portfolio {
-	display: flex;
-	height: 25rem;
-	background-color: var(--negro);
-	overflow: hidden;
-	justify-content: center;
-	align-items: center;
-}
-	/*#portfolio img {
-		min-width: 100%;
-		height: auto;
-	}*/
-	#portfolio a {
-		position: absolute;
-	}
-	#portfolio a button{
-		font-size: 3rem;
-		z-index: 10;
-		color: black;
-		border: none;
-		padding: 0.5rem 1rem;
-		border-radius: 15px;
-		cursor: pointer;
-		background-color: var(--primario);
 	}
 

@@ -23,7 +23,6 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../portfolio.html">Portfolio</a></li>
-                <li><a href="#">Etc</a></li>
             </ul>
         </nav>
 
@@ -38,10 +37,8 @@
     <!-- Nav -->
     <nav id="nav_icons">
         <ul class="icons">
-            <li><a href="#" class="icon fa-solid fa-envelope"><span class="label">Correo</span></a> </li>
             <li><a href="https://www.linkedin.com/in/angel-quintero-089538238" class="icon fa-brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
             <li><a href="https://github.com/Quinter21" class="icon fa-brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-brands fa-itch-io"><span class="label">Itch.io</span></a> </li>
         </ul>
     </nav>
 
@@ -49,11 +46,15 @@
     <div id="presentacion">
         <div id="carrusel">
             <div class="slide">
-                <img src="../assets/images/ExitTheDungeon.png" style="width: 100%;">
+                <img src="../assets/images/projects/SoC/SoC_Tittle.png" style="width: 100%;">
             </div>
 
             <div class="slide">
-                <img src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;">
+                <img src="../assets/images/projects/SoC/SoC_Saves.png" style="width: 100%;">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/projects/SoC/SoC_HUD.png" style="width: 100%;">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -61,22 +62,30 @@
 
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="../assets/images/ExitTheDungeon.png" style="width: 100%;" onclick="currentSlide(1)">
+                    <img class="demo cursor" src="../assets/images/projects/SoC/SoC_Tittle.png" style="width: 100%;" onclick="currentSlide(1)">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;" onclick="currentSlide(2)">
+                    <img class="demo cursor" src="../assets/images/projects/SoC/SoC_Saves.png" style="width: 100%;" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/projects/SoC/SoC_HUD.png" style="width: 100%;" onclick="currentSlide(3)">
                 </div>
             </div>
         </div>
 
     
         <div id="resumen">
-            <img src="../assets/images/pr2.png">
-            <p>Creado con Android Studio un amigo me propuso ser el programador para este proyecto y me lancé de cabeza.
-                Gracias a este proyecto he ampliado mi conocimiento en Java, comenzado con Flutter y mejorado habilidades de
-                análisis y gestión de proyecto a largo plazo. A su vez me ha servido para iniciarme en la creación de paquetes
-                instalación y mantemiento de aplicaciones en distintas versiones de android.
+            <img src="../assets/images/projects/SoC/SoC_Tittle.png">
+            <p>Estudiando el Master de diseño de videojuegos y crear nuestro propio estudio hemos comenzado a desarrollar nuestro juego.
+                Splash on Contact es un juego de aventura donde el jugador deberá recorrer las aplias zonas mientras combate enemigos y protege a su compañero.
             </p>
+            <div>
+                <ul class="iconos">
+                    <li><a href="https://www.linkedin.com/in/angel-quintero-089538238" class="icon fa-brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://github.com/Quinter21" class="icon fa-brands fa-tiktok"><span class="label">TikTok</span></a></li>
+                    <li><a href="" class="icon fa-solid fa-globe"><span class="label">TikTok</span></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -94,21 +103,36 @@
             <p>C++/Blueprints</p>
         </div>
         <div id="infoDescription">
-            <h1>Acerca de la aplicación</h1>
-            <p>Esta aplicación sirve para recorrer las calles de Córdoba teniendo como destino final uno de los monumentos
-                de la ciudad. Realicé este proyecto porque quería aprender sobre la realidad aumentada e iniciarme en el mundo del 
-                desarrollo de aplicaciones móviles.
+            <h1>Acerca del juego</h1>
+            <p>Este juego salió de una mezcla de ideas, crear un juego con una mecánica simple y un objetivo, que se pueda jugar incluso con una sola mano. 
+                Con esto surgió la premisa de que no hubiera combate, sino que el jugador solo tuviera que chocar contra los enemigos, y para darle un desafío
+                se deberá proteger a un NPC que acompaña al jugador.
             </p>
-            <h1>Recogida de datos</h1>
-            <p>Debido a que no solo era una aplicación de realidad aumentada, sino también sobre rutas por la ciudad me vi en la necesidad de utilizar google maps.
-                Aprendí a añadir apis a mi proyecto y comprendí como se realizan llamadas a las mismas, así como la forma de realizar rutas y cómo gestionar 
-                los marcadores específicos de google maps. También mejoré habilidades como búsqueda y análisis de documentación así como depuración y correción de errores.
+            <h1>Diseño de mecánicas</h1>
+            <p>Como Lead de Diseño mi principal objetivo es que todas las mecánicas y el flujo del juego sean divertidos y funcionen correctamente. Gracias a este
+                proyecto he mejorado mis habilidades creativas y de análisis, las cuales me han permitido entender y explicar el juego no solo a mi equipo sino
+                también al público y usuarios.
+                Para crear más dinamismo a este juego me decanté por crear un juego de velocidad, que aumenta en función de la racha de enemigos golpeados.
             </p>
-            <h1>Firebase</h1>
-            <p>Y por último y más importante es encontrar una buena base de datos, no solo para guardar la información y posición de los distintos monumentos, sino
-                también para guardar datos de los usuarios como sus nombres y contraseñas para la autenticación, sus preferencias a la hora de realizar rutas y qué
-                monumentos son más visitados.
+            <h1>Diseño del mundo</h1>
+            <p>Otra de mis tareas principales es crear y diseñar la historia y organización del mundo. Decidiendo no solo lo que les ocurre a los personajes,
+                sino también el trasfondo, qué ha llevado a que suceda toda la historia y donde sucede.
+                El mayor desafío es conseguir un diseño de niveles correcto, que permita al jugador separarse de su compañero al que hay que proteger sin castigarlo.
+                Para eso se tiene especial cuidado en la colocación de enemigos y objetos para que el usuario realice una especie de circuito sin ser un circuito.
             </p>
+            <h1>Diseño de interfaces</h1>
+            <p>Para finalizar con mis deberes como jefe de diseño debo revisar y unificar todas las interfaces propuestas por mis compañeros. Asegurandome que sean 
+                coherentes, amigables para el usuario y con un diseño a corde con la estética de juego que buscamos. He mejorado habilidades como el diseño UI/UX y 
+                el trabajo en equipo gracias a este trabajo.
+            </p>
+            <h1>Comportamiento de NPC</h1>
+            <p>Otro de mis roles es ayudar en el departamento de programación, donde mi principal cometido es programar la inteligencia artificial de los enemigos,
+                que deben comprobar donde está el jugador e intentar esquivarlo mientras buscan al compañero para atacarlo. Y el compañero que va junto al jugador,
+                que deberá buscar el lugar más seguro de la sala e intentar escapar de los enemigos mientras que el usuario acaba con ellos.
+                Esta tarea me está ayudando a profundizar en aspectos muy interesantes como lo son el pathfinding y los algoritmos A* para conseguir los mejores
+                resultados para ambos NPCs.
+            </p>
+        </div>
         </div>
 
     </div>
