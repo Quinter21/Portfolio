@@ -2,8 +2,9 @@
     --primario: #c2da4d;
     --secundario: #B4C258;
     --terciario: #D3E07C;
-    --blanco: #F0EBDF;
+    --blanco: #dfdbd2;
     --negro: #1e1b18;
+    --resalte: #a7825d;
   }
 
 h1, .titulo {

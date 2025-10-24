@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>coRdobA</title>
+    <title>EvoGuesser</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -42,11 +42,15 @@
         </ul>
     </nav>
 
-    <h1 id="titulo">coRdobA</h1>
+    <h1 id="titulo">EvoGuesser</h1>
     <div id="presentacion">
         <div id="carrusel">
             <div class="slide">
-                <img src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;">
+                <img src="../assets/images/projects/evoGuesser/evoGuesser_Game.png">
+            </div>
+
+            <div class="slide">
+                <img src="../assets/images/projects/evoGuesser/evoGuesser_Tittle.png">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -54,17 +58,20 @@
 
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="../assets/images/IMG_TFG_Collage.png" style="width: 100%;" onclick="currentSlide(1)">
+                    <img class="demo cursor" src="../assets/images/projects/evoGuesser/evoGuesser_Game.png" style="width: 100%;" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../assets/images/projects/evoGuesser/evoGuesser_Tittle.png" style="width: 100%;" onclick="currentSlide(2)">
                 </div>
             </div>
         </div>
 
     
         <div id="resumen">
-            <img src="../assets/images/IMG_TFG_Collage.png">
-            <p>Proyecto de fin de grado. Creado con Android Studio me propuse crear este proyecto para
-                aprender a manejar ARCore y poder usarlo en futuros proyectos. Esta aplicación usa los 
-                servicios de Google Maps para guiar al usuario a los distintos monumentos de la ciudad.
+            <img src="../assets/images/projects/evoGuesser/evoGuesser_Icon.jpg">
+            <p>Es un proyecto de juego serio tras investigar juegos con conceptos similares.
+                Tras asumir el rol de desarrollador con principal tarea la programación hemos estado creando este juego donde se
+                debe descubrir el bicho propuesto a partir de las cadenas filogenéticas del mismo.
             </p>
         </div>
     </div>
@@ -72,34 +79,33 @@
     <div id="datos">
         <div id="infoBox">
             <h2>Plataforma:</h2>
-            <p>Android</p>
+            <p>Android/Web</p>
             <h2>Periodo de Tiempo:</h2>
-            <p>4 meses</p>
+            <p>En progreso</p>
             <h2>Tamaño de equipo</h2>
-            <p>1 persona</p>
+            <p>4 personas</p>
             <h2>Motor/IDE:</h2>
             <p>Android Studio</p>
+            <h2>Lenguaje</h2>
+            <p>Java/XML/Flutter</p>
         </div>
         <div id="infoDescription">
             <h1>Acerca de la aplicación</h1>
-            <p>Esta aplicación sirve para recorrer las calles de Córdoba teniendo como destino final uno de los monumentos
-                de la ciudad. Realicé este proyecto porque quería aprender sobre la realidad aumentada e iniciarme en el mundo del 
-                desarrollo de aplicaciones móviles.
+            <p>Es un proyecto academico desarrollado a partir de una propuesta de un estudiante de paleontología.</p>
+            <p>Tras la invitación de mi amigo asumí el rol de programador, encargado del diseño, programación y mantenimiento de la aplicación. 
+            Gracias al desarrollo, estoy ampliando mis conocimientos en Java y he comenzado a trabajar con Flutter, explorando la integración entre ambos lenguajes.</p>
+            <p>El proyecto me está permitiendo profundizar en análisis de requisitos, gestión de proyectos a largo plazo y control de versiones.
+            Asimismo, estoy adquiriendo más experiencia en la creación de paquetes, proceso de mantenimiento de aplicaciones en distitas versiones de Android.</p>
+            
+            <h1>Recogida de datos</h1>
+            <p>Dado que se ha comenzado el proyecto desde cero es sumamente importante recoger la experiencia de usuario sobre todo en las etapas tempranas del desarrollo.
+            Es por eso que una de los temas más interesantes que estoy aprendiendo con este trabajo es la recogida de datos, 
+            así como las normas de protección y servicios de análisis que google facilita.
             </p>
-            <h1>ARCore</h1>
-            <p>Gracias a este proyecto aprendí los protocolos y el proceso de ARCore para la generación de la imágenes, selección de coordenadas
-                y rotación y sobre como se utilizan y guardan todos esos datos en la app para utilizarlos a placer para colocar nuevos modelos de forma
-                idenpendiente y poder modificar cada uno de ellos a placer de forma dinámica.
-            </p>
-            <h1>Api de Google Maps</h1>
-            <p>Debido a que no solo era una aplicación de realidad aumentada, sino también sobre rutas por la ciudad me vi en la necesidad de utilizar google maps.
-                Aprendí a añadir apis a mi proyecto y comprendí como se realizan llamadas a las mismas, así como la forma de realizar rutas y cómo gestionar 
-                los marcadores específicos de google maps. También mejoré habilidades como búsqueda y análisis de documentación así como depuración y correción de errores.
-            </p>
+            
             <h1>Firebase</h1>
-            <p>Y por último y más importante es encontrar una buena base de datos, no solo para guardar la información y posición de los distintos monumentos, sino
-                también para guardar datos de los usuarios como sus nombres y contraseñas para la autenticación, sus preferencias a la hora de realizar rutas y qué
-                monumentos son más visitados.
+            <p>Y por último, la base de datos, dado que este juego cuenta con muchas entidades distintas está siendo un reto organizar y acceder de manera rápida a todas
+            y cada una de ellas. A su vez, guardar la inforación de los usuarios en un lugar seguro y de forma correcta es lo más importante del proyecto.
             </p>
         </div>
 
