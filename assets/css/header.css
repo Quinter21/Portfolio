@@ -26,12 +26,13 @@ header {
 		font-weight: bold;
 		color: var(--blanco);
 	}
-	nav.navigation {
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
+
+	.navigation{
+		display: flex;
+		align-items: center;
 	}
-	nav ul {
+
+	.navigation nav ul {
 		display: flex;
 		list-style: none;
 		overflow: hidden;
@@ -40,7 +41,7 @@ header {
 		margin: 0;
 		font-size: 20px;
 	}
-	nav ul li a {
+	.navigation nav ul li a {
 		padding: 0 1.5rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
@@ -48,12 +49,12 @@ header {
 		color: var(--blanco);
 		text-decoration: none;
 	}
-	.buttons {
+	.navigation .buttons {
 		display: flex;
 		gap: 1rem;
 		margin: 0.5rem;	
 	}
-	.btn {
+	.navigation .btn {
 		background-color: var(--primario);
 		color: var(--negro);
 		border: none;
