@@ -13,8 +13,8 @@ body {
 #cardList {
     margin: 0 8rem 4rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3%;
 }
 
 .card {
@@ -29,7 +29,9 @@ body {
     .card img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        
+        width:100%; 
+        height: 40%; 
+        object-fit: cover;
     }
 	.card:hover {
 		box-shadow: 5px 5px 8px 5px rgba(140,150,57,0.2), -2px -0px 8px 5px rgba(140,150,57,0.2);
