@@ -11,7 +11,7 @@ body {
 
 /*CARDS*/
 #cardList {
-    margin: 0 8rem 4rem;
+    margin: 0 8rem 0rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3%;
@@ -25,10 +25,8 @@ body {
     background-color: var(--negro);
     max-height: 210px;
     overflow: hidden;
+    transition: max-height 0.3s;
 }
-    .card * {
-    transition: 0.5s ease all;
-    }
     .card img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -38,7 +36,7 @@ body {
         display: block;
     }
 	.card:hover {
-		box-shadow: 5px 5px 8px 5px rgba(140,150,57,0.2), -2px -0px 8px 5px rgba(140,150,57,0.2);
+		box-shadow: 5px 5px 8px 5px rgba(90, 96, 36, 0.42), -2px -0px 8px 5px rgba(90, 96, 36, 0.42);
 	}
     .card a {
         color: var(--blanco);
@@ -58,7 +56,7 @@ body {
         display: block;
         padding: 8px 5px;
     }  
-    .card:hover img, .card:focus-within img {
-        margin-top: -50%;
-        /* min-height: fit-content; */
+    .card:hover, .card:focus-within {
+        max-height: 1000px;
+        transition: max-height 1s;
     }
