@@ -1,17 +1,22 @@
+body {
+    background-color: var(--blanco);
+}
+
 #titulo {
     margin: 5rem 6rem 1rem;
     font-size: 2rem;
+    color: var(--negro);
 }
+
 #presentacion {
     display: flex;
     min-width: 100vb;
-    background-color: aquamarine;
+    background-color: var(--blanco);
 }
     #carrusel {
         position: relative;
         max-width: 65%;
         min-width: 10vb;
-        background-color: aliceblue;
         justify-content: center;
         align-items: center;
         padding: 2rem;
@@ -73,13 +78,15 @@
     #resumen {
         max-width: 25%;
         min-width: 10vb;
-        background-color: antiquewhite;
+        height: fit-content;
+        background-color: var(--primario);
+        border-radius: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2rem;
-        padding-left: 4rem;
-        padding-right: 6rem;
+        padding-bottom: 0;
+        margin: 2rem;
     }   
     #resumen img{
         width: 100%;
@@ -92,35 +99,45 @@
         width: 80%;
         font-size: 25px;
     }
+    #resumen p {
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--blanco);
+    }
 
 #datos {
     display: flex;
-    background-color: azure;
+    background-color: var(--primario);
 }
     #infoBox {
         margin: 2rem 2rem 2rem 5rem;
         padding: 2rem;
+        border-radius: 15px;
         padding-top: 1rem;
         width: 40vw;
-        background-color: blanchedalmond;
+        background-color: var(--resalte);
+        height: fit-content;
     }
         #infoBox h2 {
             font-size: 1.25rem;
         }
         #infoBox p {
         margin: 0.5rem 2rem;
+        font-weight: 500;    
         }
     #infoDescription {
         min-width: 55%;
         margin: 2rem 6rem 2rem 4rem;
-        background-color: beige;
     }
         #infoDescription h1 {
             font-size: 2.5rem;
+            color: var(--resalte);
         }
         #infoDescription p{
             text-align: justify;
             margin-bottom: 1rem;
+            color: var(--blanco);
+            font-size: 1.1rem;
         }
 
     
@@ -146,7 +163,7 @@ ul.iconos {
 	ul.iconos li .icon {
 		font-size: 2rem; /* Tamaño del icono */
 		text-align: center;
-		color: var(--negro); /* Color del icono */
+		color: var(--blanco); /* Color del icono */
 	}
 	ul.iconos li:hover .icon{
 		color: var(--resalte);

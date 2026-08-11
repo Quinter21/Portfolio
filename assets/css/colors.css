@@ -1,34 +1,7 @@
 :root {
-    --primario: #c2da4d;
-    --secundario: #B4C258;
-    --terciario: #D3E07C;
-    --blanco: #dfdbd2;
-    --negro: #1e1b18;
-    --resalte: #a7825d;
+    --primario: #344C36;
+    --secundario: #447448;
+    --blanco: #ebe1ce;
+    --negro: #14221d;
+    --resalte: #fab128;
   }
-
-h1, .titulo {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-  font-size: 5rem;
-}
-
-h2, .subtitulo {
-  font-family: "Gabarito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-p, button, .texto {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-button {
-  font-weight: 800;
-}

@@ -3,13 +3,35 @@
 	padding: 0;
 }
 
-p {
-	line-height: 1.5rem;
+h1, .titulo {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+  font-size: 5rem;
+}
+
+h2, .subtitulo {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p, button, .texto {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button {
+  font-weight: 800;
 }
 
 /*HEADER*/
 header {
-	background: var(--negro);
+	background: var(--primario);
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -23,7 +45,7 @@ header {
 	.logo {
 		padding: 1rem;
 		font-size: 1.5rem;
-		font-weight: bold;
+		font-weight: 600;
 		color: var(--blanco);
 	}
 
@@ -55,7 +77,7 @@ header {
 		margin: 0.5rem;	
 	}
 	.navigation .btn {
-		background-color: var(--primario);
+		background-color: var(--resalte);
 		color: var(--negro);
 		border: none;
 		padding: 0.5rem 1rem;
@@ -63,16 +85,13 @@ header {
 		cursor: pointer;
 	}
 	/*Al pasar el raton cambia el color*/
-	nav ul li:hover {
-		background: var(--primario);
-	}
-
 	nav ul li:hover a{
-		color: var(--negro);
+		color: var(--resalte);
 	}
 
 	.btn:hover {
-		background-color: var(--terciario);
+		/* background-color: var(--resalte);	 */
+		background: color-mix(in srgb, var(--resalte) 88%, black);
 	}
 
 	.btn a {
@@ -100,16 +119,19 @@ ul.icons {
 		justify-content: center;
 		width: 3rem;
 		height: 3rem;
-		background-color: var(--primario);
+		background-color: var(--resalte);
 		border-radius: 50%;
+		transition: 0.2s;
 	}
 	ul.icons li .icon {
 		font-size: 2rem; /* Tamaño del icono */
 		text-align: center;
 		color: var(--negro); /* Color del icono */
 	}
-	ul.icons li:hover .icon{
-		color: var(--resalte);
+	ul.icons li:hover{
+		background: color-mix(in srgb, var(--resalte) 80%, black);
+		width: 3.5rem;
+		height: 3.5rem;
 	}
 
 	/* Icon */
