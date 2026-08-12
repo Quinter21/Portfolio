@@ -114,3 +114,6 @@ div.skills {
 		object-fit: cover;
 	}
 
+#nav_icons {
+	z-index: 100;
+}
