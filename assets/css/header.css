@@ -1,147 +1,97 @@
-* {
-	margin: 0;
-	padding: 0;
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; scrollbar-gutter: stable;}
+
+body {
+  margin: 0;
+  background: var(--blanco);
+  color: var(--tinta);
+  font-family: var(--fuente-texto);
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
-h1, .titulo {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-  font-size: 5rem;
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--acento); }
+a:focus-visible, .btn:focus-visible {
+  outline: 3px solid var(--resalte);
+  outline-offset: 2px;
+}
+h1, h2{
+  font-family: var(--fuente-header);
+  line-height: 1.5;
+  margin: 0 0 .5em;
+}
+h3 {
+  font-family: var(--fuente-titulo);
+  line-height: 1.1;
+  margin: 0 0 .5em;
+}
+h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 800; letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 700; }
+h3 { font-size: 1.3rem; font-weight: 700; }
+
+section {
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+  background: var(--blanco);
+  padding-inline: max(1.25rem, calc((100% - 1080px) / 2));
+}
+p {
+    max-width: 60ch;
+    font-family: var(--fuente-texto);
 }
 
-h2, .subtitulo {
-  font-family: "Gabarito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+
+/* ----- HEARDER ----- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  padding: .75rem 1.25rem;
+  background: var(--fondo);
+  border-bottom: 1px solid var(--borde);
+}
+.logo {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--blanco);
+  text-decoration: none;
+}
+.topbar nav { display: flex; gap: 1.25rem; }
+.topbar nav a { color: var(--blanco); text-decoration: none; font-weight: 600; }
+.topbar nav a:hover { color: var(--acento); }
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .presen { grid-template-columns: 1fr; padding-top: 3.5rem; }
+  .code-card { margin-top: 1rem; }
+  section { padding: 3rem 1.25rem; }
 }
 
-p, button, .texto {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
 }
 
-button {
-  font-weight: 800;
+
+footer {
+  border-top: 1px solid var(--borde);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: .95rem;
+  background: var(--tinta);
+  max-width: none;
+  padding-inline: max(1.25rem, calc((100% - 1080px) / 2));
+  color: var(--blanco);
 }
-
-/*HEADER*/
-header {
-	background: var(--primario);
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-	margin: 0;
-}
-	.logo {
-		padding: 1rem;
-		font-size: 1.5rem;
-		font-weight: 600;
-		color: var(--blanco);
-	}
-
-	.navigation{
-		display: flex;
-		align-items: center;
-	}
-
-	.navigation nav ul {
-		display: flex;
-		list-style: none;
-		overflow: hidden;
-		/*gap: 1.5rem;*/
-		padding: 0;
-		margin: 0;
-		font-size: 20px;
-	}
-	.navigation nav ul li a {
-		padding: 0 1.5rem;
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		display: block;
-		color: var(--blanco);
-		text-decoration: none;
-	}
-	.navigation .buttons {
-		display: flex;
-		gap: 1rem;
-		margin: 0.5rem;	
-	}
-	.navigation .btn {
-		background-color: var(--resalte);
-		color: var(--negro);
-		border: none;
-		padding: 0.5rem 1rem;
-		border-radius: 5px;
-		cursor: pointer;
-	}
-	/*Al pasar el raton cambia el color*/
-	nav ul li:hover a{
-		color: var(--resalte);
-	}
-
-	.btn:hover {
-		/* background-color: var(--resalte);	 */
-		background: color-mix(in srgb, var(--resalte) 88%, black);
-	}
-
-	.btn a {
-		text-decoration: none;
-	}
-
-
-
-/* Icons */
-ul.icons {
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	z-index: 100;
-}
-	ul.icons li {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 3rem;
-		height: 3rem;
-		background-color: var(--resalte);
-		border-radius: 50%;
-		transition: 0.2s;
-	}
-	ul.icons li .icon {
-		font-size: 2rem; /* Tamaño del icono */
-		text-align: center;
-		color: var(--negro); /* Color del icono */
-	}
-	ul.icons li:hover{
-		background: color-mix(in srgb, var(--resalte) 80%, black);
-		width: 3.5rem;
-		height: 3.5rem;
-	}
-
-	/* Icon */
-	.icon {
-		color: var(--negro);
-		text-decoration: none;
-	}
-		.icon > .label {
-			display: none;
-		}
-		.icon.fa-brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
+footer p { margin: 0 auto; }

@@ -1,118 +1,134 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <title>Portfolio</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ángel Quintero · Desarrollador</title>
+    <meta name="description" content="Portfolio de Ángel Quintero Montes, desarrollador Junior.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Parkinsans:wght@300..800&&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Parkinsans:wght@300..800&&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap">
     <link rel="stylesheet" href="assets/css/colors.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <!--<a href="index.html" class="logo">Angel</a>-->
-        <div class="logo subtitulo">Ángel QM</div>
+<!-- Header -->
+<header class="topbar">
+    <a class="logo" href="#inicio">Ángel Q.M.</a>
 
-        <div class="navigation">    
-            <nav class="subtitulo">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li></li>
-                </ul>
-            </nav>
-
-            <div class="buttons">      
-                <button class="btn portfolio"><a href="assets/CV_English.pdf" download >CV</a></button>
-                <button class="language btn">Language</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Nav -->
-    <nav id="nav_icons">
-        <ul class="icons">
-            <!--<li><a href="#" class="icon fa-solid fa-envelope"><span class="label">Correo</span></a> </li>-->
-            <li><a href="https://www.linkedin.com/in/angel-quintero-089538238" class="icon fa-brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-            <li><a href="https://github.com/Quinter21" class="icon fa-brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="https://aquinter.itch.io/" class="icon fa-brands fa-itch-io"><span class="label">Itch.io</span></a> </li>
-        </ul>
+    <nav aria-label="Principal">
+        <a href="portfolio.html">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
     </nav>
+</header>
 
-    <!--video resumen-->  
-    <div id="videoIntro">
-        <video autoplay muted loop id="myVideo">
-        <source src="assets/videos/Polito en el laberinto.mp4" type="video/mp4">
+<main>
+
+    <section class="videoIntro">
+        <video autoplay muted loop class="myVideo">
+            <source src="assets/videos/Polito en el laberinto.mp4" type="video/mp4">
         </video>
-        
+
         <h1>Ángel Quintero Montes</h1>
-        
-    </div>
+    </section>
 
-    <div id="intro">
-        <img src="assets/images/fotoProv.jpg" alt="Avatar">
-        <p id="introText">Soy Ángel Quintero, programador junior especializado en videojuegos y sistemas. He trabajado con redes neuronales y
-            aprendizaje automático, los lenguajes que más uso son C/C++ y Python. Desarrollando aplicaciones y juegos en Unreal Engine y Android Studio, 
-            actualmente estoy estudiando el master de Diseño, Desarrollo y Comercialización de Videojuegos en la universidad de A Coruña.</p>
-    </div>
-
-    <div class="skills">
-        <img src="assets/images/ExitTheDungeon.png" alt="Project Img">
-        <div class="skillType">
-            <h1 style="font-size: 2.5rem;">HABILIDADES TÉCNICAS</h1>
-            <div class="skillBlock">
-                <div>
-                    <h2>Software y lenguajes</h2>
-                    <ul class="texto">
-                        <li>C++, C y C#</li>
-                        <li>Python, Java y Javascript</li>
-                        <li>Git/Github/Gitlab</li>
-                        <li>Visual Studio, IntelliJ, VS Code, Android Studio</li>
-                        <li>Kanban, scrum, agile</li>
-                        <li>MySQL y PL/SQL</li> 
-                        <li>English C2</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2>Motores de videojuegos</h2>
-                    <ul class="texto">
-                        <li>Unreal Engine 5</li>
-                        <li>Godot</li>
-                        <li>Unity</li>
-                    </ul>
-                </div>
+    <section id="inicio" class="presen">
+        <div class="presen-text">
+            <h2>Ángel Quintero Montes</h2>
+            <p> Desarrollador junior centrado en el desarrollo de aplicaciones rápidas y fluidas.</p>
+            <div class="actions">
+                <a class="btn btn-primary" href="portfolio.html">Ver mis proyectos</a>
+                <a class="btn" href="#contacto">Escríbeme</a>
             </div>
         </div>
-    </div>
 
-    <div style="justify-content: right;" class="skills">
-        <div class="skillType">
-            <h1 style="font-size: 2.5rem;">HABILIDADES DE DISEÑO</h1>
-            <div class="skillBlock">
-                <div>
+        <figure class="code-card">
+            <img class="avatar" src="assets/images/fotoProv.jpg" alt="Foto de perfil" width="96">
+            <pre><code><span class="k">const</span> yo = {
+    nombre: <span class="s">Ángel Quintero Montes [24]</span>,
+    lugar: <span class="s">Córdoba, ES</span>,
+    disponible: <span class="s">true</span>
+};</code></pre>
+        </figure>
+    </section>
+
+    <section id="sobreMi" class="intro">
+        <div class="intro-text">
+            <p>Ingeniero informático con máster de desarrollo de videojuegos, orientado al desarrollo
+                backend con Java y Spring Boot. Dos años desarrollando un videojuego en equipo con Unreal Engine y
+                prácitas en desarrollo con C++ y en administración de sistemas. Lo que más me motiva es programar y
+                construir sistemas desde cero, por eso estoy centrando mi carrera en backend, donde quiero crecer como
+                ingeniero y crear productos propios.</p>
+        </div>
+
+        <a class="btn btn-primary" href="../assets/CV_English.pdf" download><i class="icon fa-solid fa-download"></i>Curriculum</a>
+
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="skillRow">
+            <div class="skillType">
+                <h2 style="font-size: 2.5rem;">HABILIDADES TÉCNICAS</h2>
+                <div class="skillBlock">
+                    <h3>C1 (Advanced) - Cambridge School</h3>
+                </div>
+                <div class="skillBlock">
+                    <h3>Software y lenguajes</h3>
+                    <ul class="texto">
+                        <li>Java · SpringBoot · API REST · Maven</li>
+                        <li>Git · GitHub · GitHub Actions</li>
+                        <li>Docker compose · Testcontainers</li>
+                        <li>SQL · PostgreSQL · SQL server · Flyaway</li>
+                        <li>Kanban, Scrum, Metodologías Ágiles</li>
+
+                        <li>HTML · CSS · Javascript</li>
+                        <li>Python · C++ · Kotlin · Dart</li>
+
+                        <li>IntelliJ · Visual Studio · Android Studio</li>
+                        <li>Unreal Engine 5 · Godot · Unity</li>
+                    </ul>
+                </div>
+                <div class="skillBlock">
+                    <h3>Diseño</h3>
                     <ul class="texto">
                         <li>Diseño UX/UI</li>
                         <li>Diseño de mecánicas de juegos</li>
                         <li>Diseño narrativo</li>
                         <li>Figma</li>
-                        <li>Metodología scrum</li>
                     </ul>
                 </div>
             </div>
+            <img class="imagen" src="assets/images/ExitTheDungeon.png" alt="Project Img">
         </div>
-        <img src="assets/images/projects/SoC/SoC_Tittle.png" alt="Project Img">
-    </div>
+
+        <div class="skillRow invertida">
+            <div class="skillType">
+                <h2 style="font-size: 2.5rem;">HABILIDADES PERSONALES</h2>
+                <div class="skillBlock">
+                    <ul class="texto">
+                        <li>Trabajo en equipo</li>
+                        <li>Pensamiento crítico</li>
+                        <li>Asertivo</li>
+                        <li>Creativo</li>
+                        <li>Resolutivo</li>
+                        <li>Puntual</li>
+                        <li>Sincero</li>
+                        <li>Responsable</li>
+                    </ul>
+                </div>
+            </div>
+            <img class="imagen" src="assets/images/projects/SoC/SoC_Tittle.png" alt="Project Img">
+        </div>
+
+    </section>
 
     <div id="videoResumen">
         <p>Aquí dejo una recopilación de los mejores proyectos que he realizado hasta la fecha.</p>
@@ -120,5 +136,29 @@
             <source src="assets/videos/Polito en el laberinto.mp4" type="video/mp4">
         </video>
     </div>
+
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes una idea, una oferta o solo quieres saludar? Respondo en uno o dos días.</p>
+        <div class="actions">
+            <a class="btn btn-primary" href="mailto:anquimon21@gmail.com"><i class="icon fa-solid fa-envelope"></i>anquimon21@gmail.com</a>
+            <a class="btn" href="https://github.com/tu-usuario"><i class="icon fa-brands fa-github"></i> GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/tu-usuario"><i class="icon fa-brands fa-linkedin"></i>
+                LinkedIn</a>
+            <a class="btn" href="https://itchio.com/user"><i class="icon fa-brands fa-itch-io"></i> Itch.Io</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© <span id="anio">2026</span> Ángel Quintero Montes. Hecho a mano con HTML y CSS.</p>
+</footer>
+
+<script>
+    document.getElementById("anio").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
