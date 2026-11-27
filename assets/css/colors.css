@@ -1,7 +1,20 @@
+/* ----- Colores y tipografía ----- */
+
 :root {
-    --primario: #344C36;
-    --secundario: #447448;
+    --fondo: #14221d;
+    --superficie: #344C36;
+    --tinta: #14221d;
+    --tinta-suave: #14221d;
+
+    --acento: #fab128;
+    --acento-texto: #14221d;
+    --borde: #447448;
     --blanco: #ebe1ce;
-    --negro: #14221d;
     --resalte: #fab128;
+    --codigo-fondo: #17203a;
+
+    --fuente-header: "Parkinsans", system-ui, sans-serif;
+    --fuente-título: "Gabarito", system-ui, sans-serif;
+    --fuente-texto: "Plus Jakarta Sans", system-ui, sans-serif;
+    --fuente-codigo: "JetBrains Mono", ui-monospace, monospace;
   }
